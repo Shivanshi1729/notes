@@ -31,7 +31,7 @@ if __name__ == '__main__':
     f.write('# Notes\n\n')
 
     # reasoning
-    dir = ['ai', 'cd', 'cn', 'se', 'se-lab', 'wd', 'fa']
+    dir = ['ai', 'cd', 'cn', 'se', 'wd']
     # f.write('# Reasoning\n\n')
     space = 0
     for i in dir:

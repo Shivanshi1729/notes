@@ -22,12 +22,8 @@ title: Home
   - [chapter1.md](./se/chapter1.md)
   - [syllabus.md](./se/syllabus.md)
   - [vid.md](./se/vid.md)
-- se-lab
-  - [videos.md](./se-lab/videos.md)
 - wd
   - [videos.md](./wd/videos.md)
   - [web_dev.md](./wd/web_dev.md)
-- fa
-  - [formal_automata.md](./fa/formal_automata.md)
 
 
