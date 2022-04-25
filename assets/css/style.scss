@@ -1,0 +1,6 @@
+---
+---
+
+@import
+  "skins/{{ site.skin | default: 'classic' }}",
+  "initialize";

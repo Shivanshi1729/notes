@@ -1,0 +1,14 @@
+title: Notes
+author:
+  name: Shivanshi
+  email: physicist.artist@gmail.com
+description: Don't comment bad code rewrite it.
+plugins:
+  - jekyll-relative-links
+relative_links:
+  enabled:     true
+  collections: true
+social_links:
+  github: Shivanshi1729/notes
+url: "https://shivanshi1729.github.io"
+baseurl: "/notes"
