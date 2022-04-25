@@ -34,15 +34,15 @@ layout: default
 ## unit 1 - chapter 3
 
 - understanding the software process
-- sdlc intro
-- sdlc code and fix model
-- sdlc waterfall model
-- sdlc iterative waterfall model
-- sdlc model part i
-- sdlc model part ii
-- sdlc incremental model
-- sdlc throwaway prototyping model
-- sdlc evolutionary prototyping
+- SDLC intro
+- SDLC code and fix model
+- SDLC waterfall model
+- SDLC iterative waterfall model
+- SDLC model part i
+- SDLC model part ii
+- SDLC incremental model
+- SDLC throwaway prototyping model
+- SDLC evolutionary prototyping
 - spiral model I
 - spiral model II
 - spiral model III
@@ -72,10 +72,8 @@ layout: default
 - feasibility study
 - requirement elicitation techniques
 - barriers to elicitation of user req.
-- requirements specifications in natural and 
-  structured language
-- requirements specification using graphical and 
-  math notations
+- requirements specifications in natural and structured language
+- requirements specification using graphical and math notations
 - srs intro
 - good and bad practice in writing srs
 - ieee srs template

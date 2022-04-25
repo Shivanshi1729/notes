@@ -279,3 +279,5 @@ $$
 
 <img src='./img/osi-tcp.jpg' alt='osi' width="500px">
 
+<img src='./img/tcp-ip-protocol.jpg' alt='osi' width="500px">
+
