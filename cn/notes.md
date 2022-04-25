@@ -17,8 +17,12 @@ layout: math
 - [network core](#network-core-1)
   - [packet switching](#packet-switching)
   - [circuit switching](#circuit-switching)
-    - [frequency division multiplexing](#frequency-division-multiplexing)
-    - [time division](#time-division)
+    - [frequency division multiplexing (FDM)](#frequency-division-multiplexing-fdm)
+    - [time division multiplexing (TDM)](#time-division-multiplexing-tdm)
+- [how is it connected](#how-is-it-connected)
+- [how packet delay and loss occur](#how-packet-delay-and-loss-occur)
+  - [delay sources](#delay-sources)
+  - [throughput](#throughput)
 
 # what is internet
 
@@ -250,3 +254,27 @@ $$
 - rate - bits per second - at which data is being send form transmitter to receiver
   - instantaneous - at given point
   - average - rate over longer period of time
+
+
+# protocol layers, service models
+
+## why layering
+
+- to design complex systems
+- explicit structure allows identification,
+  relationship of system pieces
+- modularization eases maintenance and updating the system
+
+## layered protocol stack
+
+- **application**
+- **presentation**
+- **session**
+- **transport**
+- **network**
+- **data link**
+- **physical**
+
+<img src='./img/osi.jpg' alt='osi' width="400px">
+
+<img src='./img/osi-tcp.jpg' alt='osi' width="500px">
