@@ -160,6 +160,126 @@ layout: default
     - level2
   - data dictionaries
 
+<br>
+
+- Software design
+- activities
+  - high level design 
+  - detailed design
+- good software design
+  - correctness
+  - understandability
+  - efficiency
+  - maintainability
+  - completeness
+  - consistency
+- principles
+  - problem partitioning
+  - increasing abstraction
+  - modularity
+  - increase cohesion
+  - reduce coupling
+  - increase reusability
+  - design for flexibility - should be flexible to anticipate changes
+  - design for portability
+  - design for testability
+- level oriented software design
+  - bottom up
+  - top down
+- function and object oriented software design
+  - er model
+  - decision tree
+  - dfd
+    - 0 level - context diagram
+    - 1 level
+    - 2 level
+  - structure charts
+- cohesion
+  - coincidental - randomly put together
+  - logical - similar functions
+  - temporal - functions executed at same period
+  - procedural - working for same algo and goal
+  - communicational - all function refer to or update same data structure
+  - sequential - elements are part of a sequence
+  - functional - all elements work together to achieve a single task
+- coupling
+  - data - communicate through a parameter - int bool
+  - stamp - through a c like structure
+  - control - data from one is used to direct the order in another
+  - common - global items
+  - content - they share code
+- functional independence
+  - error isolation
+  - scope of reuse
+  - understandability
+
+<br>
+
+- object oriented design (ood)
+  - class
+  - abstraction
+  - encapsulation
+  - inheritance
+  - polymorphism
+- UML in ood
+  - things - class, object, interface
+  - relationships - 
+  - diagrams
+  - structural diagram - class diagrams show object classes and associations between them
+  - interaction diagram - show interactions
+  - behavioral diagrams - activity diagrams which show activities involved in process of data
+- Context Models
+- Interaction Models
+  - use case diagram
+  - sequence diagram
+- Structured Models
+  - class diagrams
+- Behavioral Diagrams
+  - data drive modelling
+    - activity diagram
+  - event driven modelling
+
+<br>
+
+- Architectural Design
+- Architectural Views
+  - logical view
+  - process view
+  - development view
+  - physical view
+- Architectural Patterns 
+  - Layered
+  - Repository
+  - Client-server
+  - Pipe-filter
+
+<br>
+
+- Development
+  - Selection of a language
+  - Reuse of the software
+  - Configuration management
+    - Version management
+    - System integration
+    - Problem tracking
+  - Host target development
+- Coding
+- Coding guidelines
+  - small and easy to understand
+  - module - date of creation, who creates, use
+  - naming convention
+  - no goto
+  - code documentation
+- Coding Documentation
+  - README
+  - functionality of each module
+  - naming conventions
+  - name of contributors
+  - license and version
+- Code Review
+  - code walkthrough
+  - code inspection
+
 ## code and fix
 
 ### pros
