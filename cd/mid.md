@@ -64,7 +64,7 @@ layout: math
 - LR - generates parse tree by using some unambiguous grammar.
 - operator precedence parser - two consecutive non-terminals and epsilon never appear on right side of production
 
-# LL(1)
+# parsing
 
 ## `first()`
 
@@ -96,3 +96,67 @@ $\text{follow}(A)$ contains set of all terminals present immediate to right of $
     if $\epsilon \in \text{first}(\beta)$
 - $X \rightarrow \alpha B$
   - $\text{follow}(B) = \text{follow}(X)$
+
+## left recursion
+
+- if grammar contains production of form
+- $A \rightarrow A \alpha | \beta$
+- it it left recursive grammar
+- to remove left recursion
+
+<br>
+
+- Convert $A \rightarrow A \alpha | \beta$ to
+- $A \rightarrow \beta A'$
+- $A' \rightarrow \alpha A' | \epsilon$
+
+## left factoring
+
+- if grammar contains production in form
+- $A \rightarrow \alpha \beta_1 | \alpha \beta_2 | ... | \alpha \beta_n$
+- to eliminate it, write it in the form
+- $A \rightarrow A'$
+- $A' \rightarrow \beta_1 | \beta_2 | ... | \beta_n$
+
+## LL(1)
+
+- find **first** and **follow** sets of the grammar given
+- create paring table, add dollar with terminal
+- now for production 
+  - $A \rightarrow \text{RHS}$, fill it in $(A, \text{first}(\text{RHS}))$
+  - $A \rightarrow abc$, fill it in $(A, \text{first}(abc))$
+  - if $A \rightarrow \epsilon$, fill it in $(A, \text{follow}(A))$ 
+
+Grammar
+
+- $1$ $S \rightarrow (L)$
+- $2$ $S \rightarrow a$
+- $3$ $L \rightarrow SL'$
+- $4$ $L' \rightarrow \epsilon$
+- $5$ $L' \rightarrow ,SL'$
+
+_    |`first`        | `follow`|
+-----|---------------|---------|
+$S$  |$($ $a$        |$\$$ $)$ |
+$L$  |$($ $a$        |$)$      |
+$L'$ |$,$ $\epsilon$ |$)$      |
+
+- $S \rightarrow (L)$
+  - $S$ and $($
+- $S \rightarrow a$
+  - $S$ and $a$
+- $L \rightarrow SL'$
+  - $L$ and first$(S)$
+  - $L$ and $($
+  - $L$ and $a$
+- $L' \rightarrow \epsilon$
+  - $L'$ and follow$(L')$, because of $\epsilon$
+  - $L'$ and $)$
+- $L' \rightarrow ,SL'$
+  - $L'$ and $,$
+
+_    | ( | ) | a | , | $ |
+-----|---|---|---|---|---|
+$S$  | 1 |   | 2 |   |   |
+$L$  | 3 |   | 3 |   |   |
+$L'$ |   | 4 |   | 5 |   |

@@ -9,6 +9,8 @@ title: Home
   - [videos.md](./ai/videos.md)
 - cd
   - [compiler_design.md](./cd/compiler_design.md)
+  - img
+  - [mid.md](./cd/mid.md)
   - [unit1.md](./cd/unit1.md)
   - [videos.md](./cd/videos.md)
 - cn
