@@ -11,7 +11,13 @@ layout: math
 - [Parser](#parser)
   - [top down parser](#top-down-parser)
   - [bottom up parser](#bottom-up-parser)
+- [parsing](#parsing)
+  - [`first()`](#first)
+  - [`follow()`](#follow)
+  - [left recursion](#left-recursion)
+  - [left factoring](#left-factoring)
 - [LL(1)](#ll1)
+  - [how to parse string in `LL(1)`](#how-to-parse-string-in-ll1)
 
 # compiler
 
@@ -100,25 +106,28 @@ $\text{follow}(A)$ contains set of all terminals present immediate to right of $
 ## left recursion
 
 - if grammar contains production of form
-- $A \rightarrow A \alpha | \beta$
+$$A \rightarrow A \alpha | \beta$$
 - it it left recursive grammar
 - to remove left recursion
-
-<br>
-
-- Convert $A \rightarrow A \alpha | \beta$ to
-- $A \rightarrow \beta A'$
-- $A' \rightarrow \alpha A' | \epsilon$
+- Convert 
+$$A \rightarrow A \alpha | \beta$$ 
+to
+$$
+A \rightarrow \beta A' \\
+A' \rightarrow \alpha A' | \epsilon
+$$
 
 ## left factoring
 
 - if grammar contains production in form
-- $A \rightarrow \alpha \beta_1 | \alpha \beta_2 | ... | \alpha \beta_n$
+$$A \rightarrow \alpha \beta_1 | \alpha \beta_2 | ... | \alpha \beta_n$$
 - to eliminate it, write it in the form
-- $A \rightarrow A'$
-- $A' \rightarrow \beta_1 | \beta_2 | ... | \beta_n$
+$$
+A \rightarrow A' \\
+A' \rightarrow \beta_1 | \beta_2 | ... | \beta_n
+$$
 
-## LL(1)
+# LL(1)
 
 - find **first** and **follow** sets of the grammar given
 - create paring table, add dollar with terminal
@@ -137,7 +146,7 @@ Grammar
 
 _    |`first`        | `follow`|
 -----|---------------|---------|
-$S$  |$($ $a$        |$\$$ $)$ |
+$S$  |$($ $a$        |$ $)$    |
 $L$  |$($ $a$        |$)$      |
 $L'$ |$,$ $\epsilon$ |$)$      |
 
@@ -160,3 +169,29 @@ _    | ( | ) | a | , | $ |
 $S$  | 1 |   | 2 |   |   |
 $L$  | 3 |   | 3 |   |   |
 $L'$ |   | 4 |   | 5 |   |
+
+## how to parse string in `LL(1)`
+
+```cpp
+bool ll_1_parser(string s, string[][] parsing_table){
+  stack<string> st;
+  st.push('$'); // default
+
+  int i = 0; // look ahead symbol
+  while(i < s.length()){
+    char tos = st.top(); // top os stack
+    st.pop();
+
+    stack.push(reverse(parsing_table[tos][s[i]]));
+    if(isTerminal(st.top())){
+      if(st.top() == s[i]){
+        i++; // move look ahead on matching
+      }
+    }
+  }
+
+  if(st.empty()) return true; // string accepted
+  else return false; // string not accepted
+}
+```
+
