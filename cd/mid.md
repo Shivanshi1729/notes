@@ -174,7 +174,7 @@ $L'$ |   | 4 |   | 5 |   |
 
 ```cpp
 bool ll_1_parser(string s, string[][] parsing_table){
-  stack<string> st;
+  stack<char> st;
   st.push('$'); // default
 
   int i = 0; // look ahead symbol
