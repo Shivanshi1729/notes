@@ -1,0 +1,27 @@
+---
+permalink: /assets/css/theme.css
+---
+
+:root {
+    --text: {{ themes[0].colors.text }};
+    --text-dark: {{ themes[0].colors.text-dark }};
+    --border: {{ themes[0].colors.border }};
+    --primary: {{ themes[0].colors.primary }};
+    --secondary: {{ themes[0].colors.secondary }};
+    --primary-dark: {{ themes[0].colors.primary-dark }};
+    --bg: {{ themes[0].colors.bg }};
+    --bg-alt: {{ themes[0].colors.bg-alt }};
+}  
+
+@media(prefers-color-scheme: dark) {
+    :root {
+    --text: {{ themes[1].colors.text }};
+    --text-dark: {{ themes[1].colors.text-dark }};
+    --border: {{ themes[1].colors.border }};
+    --primary: {{ themes[1].colors.primary }};
+    --secondary: {{ themes[1].colors.secondary }};
+    --primary-dark: {{ themes[1].colors.primary-dark }};
+    --bg: {{ themes[1].colors.bg }};
+    --bg-alt: {{ themes[1].colors.bg-alt }};
+    }
+}

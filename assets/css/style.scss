@@ -1,6 +1,5 @@
 ---
 ---
 
-@import
-  "skins/{{ site.skin | default: 'classic' }}",
-  "initialize";
+@import "skins/{{ site.skin | default: 'classic' }}";
+@import "initialize";
