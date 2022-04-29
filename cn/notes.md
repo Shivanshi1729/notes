@@ -1,5 +1,6 @@
 ---
-layout: math
+layout: default
+use_math: true
 ---
 
 - [what is internet](#what-is-internet)

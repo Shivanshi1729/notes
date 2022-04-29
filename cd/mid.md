@@ -1,6 +1,15 @@
 ---
-layout: math
+layout: default
+use_math: true
+use_mermaid: true
 ---
+
+<div class="mermaid">
+    graph TD 
+    A[Client] --> B[Load Balancer] 
+    B --> C[Server1] 
+    B --> D[Server2]
+</div>
 
 <h1> Compiler Design </h1>
 
