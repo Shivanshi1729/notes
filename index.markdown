@@ -34,6 +34,7 @@ title: Home
       - [last_two_digit.md](./notes/cs/quant/last_two_digit.md)
       - [logarithms.md](./notes/cs/quant/logarithms.md)
       - [modular-arithmetic.md](./notes/cs/quant/modular-arithmetic.md)
+      - [permutation_and_combinations.md](./notes/cs/quant/permutation_and_combinations.md)
       - [questions.md](./notes/cs/quant/questions.md)
       - [unit_no.md](./notes/cs/quant/unit_no.md)
   - se
