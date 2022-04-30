@@ -29,10 +29,7 @@ if __name__ == '__main__':
 
     f.write("---\nlayout: default\ntitle: Home\n---\n")
     f.write('# Notes\n\n')
-
-    # reasoning
     dir = ['notes']
-    # f.write('# Reasoning\n\n')
     space = 0
     for i in dir:
         if i == ".git" or i == ".vscode":

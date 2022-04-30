@@ -1,6 +1,7 @@
 ---
 layout: default
 use_math: true
+use_mermaid: true
 ---
 
 <h1> Compiler Design </h1>
@@ -39,7 +40,20 @@ use_math: true
 - code generator
 - machine dependent code optimizer
 
-<img src="./img/cprocess.png" alt="compiler-process" width="300px">
+<div class="mermaid">
+flowchart TB
+    _("Character Stream") -->A["Lexical Analyzer"]
+    A -- "Token Stream" -->B["Syntax Analyzer"]
+    B -- "Syntax Tree" -->C["Semantic Analyzer"]
+    C -- "Syntax Tree" --> D["Intermediate Code Generation"]
+    D -- "Intermediate Representation" -->E["Machine Independent Code Generation"]
+    E -- "Intermediate Representation" -->F["Code Generator"]
+    F -- "Target Machine Code" -->G["Machine Independent Code Optimizer"]
+    G --> H("Target Machine Code")
+
+    style _ fill:#fff 
+    style H fill:#fff
+</div>
 
 # Lexical analyzer
 
