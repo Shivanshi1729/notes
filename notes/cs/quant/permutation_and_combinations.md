@@ -48,3 +48,10 @@ $$
   $$
   \frac{n!}{p!q!}
   $$
+- $n$ identical things to be distributed to $r$ boxes,
+  no of ways 
+  $$
+  C^{n+r-1}_{r-1}
+  $$
+  Same as lining all the $n+r-1$ items and the selecting 
+  $r-1$ and remove them, which will give you $r$ partitions.
