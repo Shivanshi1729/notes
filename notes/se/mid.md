@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Outline
+parent: Software Engineering
 ---
 
 - software vs program

@@ -1,29 +1,12 @@
 ---
 layout: default
-use_math: true
+title: Notes
+parent: Computer Networking
+mathjax: true
 ---
 
-- [what is internet](#what-is-internet)
-  - [nut bolt view](#nut-bolt-view)
-  - [services view](#services-view)
-- [what is a protocol](#what-is-a-protocol)
-- [Internet structure](#internet-structure)
-  - [network edge](#network-edge)
-  - [access network, physical media](#access-network-physical-media)
-  - [network core](#network-core)
-- [Host: sends packet of data](#host-sends-packet-of-data)
-- [Links - physical media](#links---physical-media)
-  - [guided media](#guided-media)
-  - [unguided media](#unguided-media)
-- [network core](#network-core-1)
-  - [packet switching](#packet-switching)
-  - [circuit switching](#circuit-switching)
-    - [frequency division multiplexing (FDM)](#frequency-division-multiplexing-fdm)
-    - [time division multiplexing (TDM)](#time-division-multiplexing-tdm)
-- [how is it connected](#how-is-it-connected)
-- [how packet delay and loss occur](#how-packet-delay-and-loss-occur)
-  - [delay sources](#delay-sources)
-  - [throughput](#throughput)
+1. TOC
+{:toc}
 
 # what is internet
 

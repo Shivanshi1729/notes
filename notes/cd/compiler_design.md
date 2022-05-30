@@ -1,18 +1,13 @@
 ---
 layout: default
+title: Syllabus
+parent: Compiler Design
 ---
 
 # Compiler Design
 
-- [Compiler Design](#compiler-design)
-  - [Course Outcomes](#course-outcomes)
-  - [Unit I](#unit-i)
-  - [Unit II](#unit-ii)
-  - [Unit III](#unit-iii)
-  - [Unit IV](#unit-iv)
-  - [Unit V](#unit-v)
-  - [Text Books](#text-books)
-  - [Reference Books](#reference-books)
+1. TOC
+{:toc}
 
 ## Course Outcomes
 

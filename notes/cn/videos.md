@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Videos
+parent: Computer Networking
 ---
 
 - [Introduction to CN URL](https://www.youtube.com/watch?v=49g3tlelyDg)

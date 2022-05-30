@@ -1,7 +1,8 @@
 ---
 layout: default
+title: Guide ilearn
+parent: Software Engineering
 ---
-
 # unit 1 - Chapter 1
 # unit 1 - Chapter 2
 # unit 1 - Chapter 3

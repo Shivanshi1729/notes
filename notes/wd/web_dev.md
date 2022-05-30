@@ -1,17 +1,13 @@
 ---
 layout: default
+title: Syllabus
+parent: Web Development
 ---
 
 # Web Development
 
-- [Web Development](#web-development)
-  - [Course Outcomes](#course-outcomes)
-  - [Unit I](#unit-i)
-  - [Unit II](#unit-ii)
-  - [Unit II](#unit-ii-1)
-  - [Unit IV](#unit-iv)
-  - [Unit V](#unit-v)
-  - [Text Books](#text-books)
+1. TOC
+{:toc}
 
 ## Course Outcomes
 

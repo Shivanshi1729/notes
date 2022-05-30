@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Computer Network
 
 - [Computer Network](#computer-network)
@@ -214,3 +218,80 @@
 - dhcp - 67/68
 - smtp
 - dns - 53
+
+# software in networking
+
+- cisco packet tracer
+- gcna
+- ping - packet internet gopher, works on icmp protocol
+
+
+## packet tracer
+
+### router
+
+- connect router to a end device through a cable
+  - 
+
+Modes:
+- usermode
+- privilege mode `enable` `disable`
+- configuration mode `configure terminal`
+
+- `?` for help whenever you want
+- `Ctrl+shift+6` to stop execution of a command
+- `show version`
+- `show ip` - show routing table
+- `show history` - history
+- `show clock`
+
+### connect two pc
+
+- cross over cable is used
+
+
+# ip
+
+## types
+
+|class | ip              |subnet          |         use          |
+|------|-----------------|----------------|----------------------|
+|A     | `1-127.x.x.x`   | `255.0.0.0`    | huge corporations    |
+|B     | `128-191.x.x.x` | `255.255.0.0`  | big companies        |
+|C     | `192-223.x.x.x` | `255.255.255.0`| small companies      |
+|D     | `224-239.x.x.x` |                | multicast            |
+|E     | `240-255.x.x.x` |                | research/development |
+
+but some are reserved for private use in each class
+
+- class A - `10.0.0.0` - `10.255.255.255`
+- class B - `172.16.0.0` - `172.16.0.0`
+- class C - `192.168.0.0` - `192.168.255.255`
+
+**Note**
+- `127` - `0111` `1111` - `    + 64 + 32 + 16 + 15`
+- `191` - `1011` `1111` - `128 +    + 32 + 16 + 15`
+- `223` - `1101` `1111` - `128 + 64 +    + 16 + 15`
+- `239` - `1110` `1111` - `128 + 64 + 32 +    + 15`
+- `255` - `1111` `1111` - `128 + 64 + 32 + 16 + 15`
+
+how to remember
+
+- `127` + 64 - 191
+- `191` + 32 - 223
+- `223` + 16 - `255`
+
+so we can recognize the class of ip using first four bit
+
+| Starting Bit | Class |
+|--------------|-------|
+| `0`          |   A   |
+| `10`         |   B   |
+| `110`        |   C   |
+| `1110`       |   D   |
+| `1111`       |   E   |
+
+## subnetting
+
+- dividing network in smaller networks
+- 

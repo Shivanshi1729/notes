@@ -1,25 +1,14 @@
 ---
 layout: default
-use_math: true
-use_mermaid: true
+title: Summary
+parent: Compiler Design
 ---
 
-<h1> Compiler Design </h1>
 
-- [compiler](#compiler)
-- [interpreter](#interpreter)
-- [structure of compiler](#structure-of-compiler)
-- [Lexical analyzer](#lexical-analyzer)
-- [Parser](#parser)
-  - [top down parser](#top-down-parser)
-  - [bottom up parser](#bottom-up-parser)
-- [parsing](#parsing)
-  - [`first()`](#first)
-  - [`follow()`](#follow)
-  - [left recursion](#left-recursion)
-  - [left factoring](#left-factoring)
-- [LL(1)](#ll1)
-  - [how to parse string in `LL(1)`](#how-to-parse-string-in-ll1)
+# Summary
+
+1. TOC
+{:toc}
 
 # compiler
 

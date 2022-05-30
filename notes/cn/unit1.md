@@ -1,7 +1,8 @@
 ---
 layout: default
+title: Unit 1
+parent: Computer Networking
 ---
-
 # Computer Network
 
 - IP Address - consists of two parts

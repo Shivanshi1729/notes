@@ -1,17 +1,13 @@
 ---
 layout: default
+title: Syllabus
+parent: Artificial Intelligence
 ---
 
 # Artificial Intelligence
 
-- [Artificial Intelligence](#artificial-intelligence)
-  - [Course Outcomes](#course-outcomes)
-  - [Unit I](#unit-i)
-  - [Unit II](#unit-ii)
-  - [Unit III](#unit-iii)
-  - [Unit IV](#unit-iv)
-  - [Unit V](#unit-v)
-  - [Text Books](#text-books)
+1. TOC
+{:toc}
 
 ## Course Outcomes
 

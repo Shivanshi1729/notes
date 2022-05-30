@@ -1,6 +1,9 @@
 ---
 layout: default
+title: Videos
+parent: Compiler Design
 ---
+
 
 - Introduction to Compiler. [link](https://www.youtube.com/watch?v=7Nb-NTGbe-Q&list=PLbRMhDVUMngcseCW7wXDvtTDemCuH80fP&index=3)
 - Introduction to Compiler Design. [link](https://www.youtube.com/watch?v=2rWJbBjG6mI)

@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Summary
+parent: Software Engineering
 ---
 
 # se 

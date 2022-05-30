@@ -1,5 +1,7 @@
 ---
 layout: default
+title: OSI Model
+parent: Computer Networking
 ---
 
 # OSI Model 
