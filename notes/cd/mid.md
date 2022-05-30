@@ -2,6 +2,8 @@
 layout: default
 title: Summary
 parent: Compiler Design
+mathjax: true
+mermaid: true
 ---
 
 
