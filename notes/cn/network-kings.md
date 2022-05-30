@@ -1,29 +1,13 @@
 ---
 layout: default
+title: Basics
+parent: Computer Networking
+mathjax: true
 ---
-
 # Computer Network
 
-- [Computer Network](#computer-network)
-- [networking](#networking)
-- [some terms](#some-terms)
-	- [nic](#nic)
-	- [topology it defines how the network is connected](#topology-it-defines-how-the-network-is-connected)
-	- [hub (not used anymore)](#hub-not-used-anymore)
-	- [switch](#switch)
-	- [bridge](#bridge)
-	- [router](#router)
-	- [repeater](#repeater)
-	- [modem](#modem)
-- [osi model](#osi-model)
-	- [layers](#layers)
-	- [application](#application)
-	- [presentation](#presentation)
-	- [session](#session)
-	- [transport](#transport)
-	- [network](#network)
-	- [data link](#data-link)
-	- [physical](#physical)
+1. TOC
+{:toc}
 
 # networking
 
