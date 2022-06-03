@@ -5,6 +5,15 @@ parent: Software Engineering
 mathjax: true
 ---
 
+<details open markdown="block">
+  <summary>
+    Table of contents
+  </summary>
+  {: .text-delta }
+1. TOC
+{:toc}
+</details>
+
 ## ISO 9126 quality standards
 
 - Functionality
