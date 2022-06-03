@@ -2,7 +2,10 @@
 layout: default
 title: Outline
 parent: Software Engineering
+mathjax: true
 ---
+
+# Unit 1 - software development life cycle
 
 - software vs program
   - program is simple and usually a single source code file
@@ -43,8 +46,6 @@ parent: Software Engineering
   - document management
   - reservation
 
-<br>
-
 - software development life cycle
   - used by software industry to design, develop and test high quality software.
 - models
@@ -67,8 +68,6 @@ parent: Software Engineering
     - longevity - time form system creation till its replacement
     - inappropriateness - measure of behavior of shortfall over time
 
-<br>
-
 - non traditional software development process
   - rapid application development (RAD)
     - business modeling
@@ -85,7 +84,7 @@ parent: Software Engineering
     - extreme programming (XP)
     - SCRUM
 
-<br>
+# Unit 2 - requirements
 
 - requirements
   - types
@@ -162,7 +161,7 @@ parent: Software Engineering
     - level2
   - data dictionaries
 
-<br>
+# Unit 3 - software design
 
 - Software design
 - activities
@@ -215,8 +214,6 @@ parent: Software Engineering
   - scope of reuse
   - understandability
 
-<br>
-
 - object oriented design (ood)
   - class
   - abstraction
@@ -241,8 +238,6 @@ parent: Software Engineering
     - activity diagram
   - event driven modelling
 
-<br>
-
 - Architectural Design
 - Architectural Views
   - logical view
@@ -254,8 +249,6 @@ parent: Software Engineering
   - Repository
   - Client-server
   - Pipe-filter
-
-<br>
 
 - Development
   - Selection of a language
@@ -282,45 +275,126 @@ parent: Software Engineering
   - code walkthrough
   - code inspection
 
-## code and fix
 
-### pros
+# Unit 4 - testing
 
-- convenient for small projects
-- time saver for low budget projects
-- common in software groups where there are many entry level developers
-- developers enjoy this model because of full control
+- bugs - defect informally
+- defect - system not meeting the requirement
+- error - mistake in code is called error
+- fault - the state of incorect working of a system
+- failure - when multiple defects occur
 
-### cons
+- Intro
+  - Testing Objectives
+    - validation testing
+    - defect testing - where srs is not met
+  - verification vs validation
+    - vefification 
+      - srs, design, and code are checked
+      - may not include program execution
+      - code inspection, reviews, walkthroughs
+    - validation
+      - done in the end
+      - generic process that is used to endure srs is met
+  - Software Insepection
+- Testing Process
+  - Development Testing
+    - Unit Testing
+      - Test Case generation
+        - Partition testing - equivalence classes
+        - guideline based testing - based on experience
+    - Integration Testing
+      - big bang integraiton testing
+      - Top down integration testing
+      - bottom up integration testing
+      - sandwitch integration testing
+  - Release Testing of functionality testing
+    - requirement based testing - based on srs
+    - scenario testing - bases on real world scenarios
+    - performace testing
+      - stress testing - light load - high load
+      - volume testing - data structures used are tested for overflow
+      - configuration testing - configutation of hardware and software is verified
+      - compatibality testing - compatibility between hardware, os, browser
+      - recovery testing - system respoonse to faults, loss of service such as power
+      - maintainance testing - testing performed on alresdy installed system
+      - documentation testing - 
+      - usability testing - user interface is tested
+      - regression testing - testing when an existing system is changed orr upgraded
+        if there are new bugs after additon of new features or performace issues
+  - User Testing or System Testing
+    - alpha testing
+      - tesing team and developers
+    - beta testing
+      - friendly customers
+    - acceptance testing
+      - end user test the system and decide whether the system is ready for deployment
+- Structural and functional testing
+  - structural testing - **white box, clear box**
+    - test code, code specification, input output constrians, data structure
+  - functional testing **black box testing**
+    - check srs
+  - White box testing 
+    - statement coverage testing
+      - test cases are such that every statement should be executes once
+    - Branch Coverage testing
+      - test cases are such that every branch should be executed once
+      - stronger than statement
+    - Condition testing
+      - each expression is tested
+      - $2^n$ test case required
+      - used when n is small
+    - Path testing - used control flow graph (CFG)
+      - path are tested which are linear independent
+      - **Cyclometric complexity**
+        - method 1: $C(G) = E-V+2$
+        - method 2: total no of bounded areas + 1
+        - method 3: total no of decision statement + 1, also called **McCabe's meric**
+    - Mutation Testing
+      - change some code randomly and check if errors are generated by the 
+        test cases
+  - **Black Block Testing** or behavioural testing
+    - test input and output
+    - stratigies
+      - use equivalence classes
+      - boundary value testing
+      - decision table testing
+- Static Testing Stratigies
+  - missing requirements, inconsistencies in interface desing, deviation form target problem
+  - no execution of code
+  - Review
+    - informal
+    - walk through
+    - peer review - team member check each other code
+    - insepection - srs used to verify the code by higher authorities
+  - static analysis
+    - quality of developed code evaluated
+    - defect - syntax error, variable that is not used, unwanted code, infinte loop
+    - test used
+      - data flow checking
+      - control folw
+      - identification of linearlty independent paths
+- Automated testing
+  - using test suite
+  - not cost effective
+  - when to use
+    - critical software high risk, 
+    - repeated execution of test cases
+    - lengthy codewith high volume
 
-- hard to maintain and change product
-- quality related issues
-- only for small projects
-- hard to estimate end timeline
+# Unit 5 - project management and mamagement
 
-## waterfall
-
-<img src='./img/waterfall.png' alt='waterfall' width="350px">
-
-### pros
-
-- simple easy to understand 
-- phases processes one at a time
-- suited for small project with well defined requirements
-- all phases are well documented, if someone leave new employee will easily take their place
-- enable project managers to track progress
-- reduces development and maintenance cost
-
-### cons
-
-- rigid model. results of one phase has to be frozen before starting another phase
-  in real life phases can overlap to reduce cost and increase efficiency
-- not good for complex and long ongoing projects
-- requirements change midway are difficult to accommodate
-- no working model till end
-- integration done at end, so hard to catch some issues
-- heavily document to the point of being bureaucratic
-
-## 
-
-## 
+- COCOMO Constructive Cost Model
+  - $\text{effort} = a_1 * (\text{KLOC})^{a_2} \text{ PM}$
+  - $\text{time}_{dev} = b_1 * (\text{effort})^{b_2} \text{ months}$
+- ISO 9000 standard
+  - guidelines for producing the product
+  - not concerned with teh product itself
+  - types
+    - 9001 - applies to most software organizations
+    - 9002 - standard focus on manufacturing not for software products
+    - 9003 - organizations involved only in installation and testing ofd products
+  - iso cerification - customer gets confidence in product
+  - does not gaurantee the high quality of the process
+  - heavy emphasis on documentation and take lot of time and effort
+- SEI CMM - software engineering institute capibility maturity model
