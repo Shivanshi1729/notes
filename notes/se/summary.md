@@ -3,6 +3,7 @@ layout: default
 title: Summary
 parent: Software Engineering
 mathjax: true
+mermaid: true
 ---
 
 <details open markdown="block">
