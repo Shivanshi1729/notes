@@ -110,7 +110,7 @@ The result of incremental failure rate of software development which led to an i
   
   - Work on one phase is frozen and documentation is passed on.
 
-```mermaid
+<div class="mermaid">
 flowchart TD
     id1(Requirement analysis and specification)
     id2(Design and specification)
@@ -118,7 +118,7 @@ flowchart TD
     id4(Integration and System Testing)
     id5(Delivery and Maintainence)
     id1-->id2-->id3-->id4-->id5
-```
+</div>
 
 - Advantages
   
@@ -146,7 +146,7 @@ flowchart TD
 
 ### Iterative Waterfall Model
 
-```mermaid
+<div class="mermaid">
 flowchart TD
 a(Feasibility study)
 b(Requirement analysis and specification)
@@ -159,7 +159,7 @@ f-->b
 f-->c
 f-->e
 f-->d
-```
+</div>
 
 ### V Model
 
@@ -237,7 +237,7 @@ ___
 
 - Use of powerful tools and techniques
 
-```mermaid
+<div class="mermaid">
 flowchart TD;
 a(Business Modelling)
 b(Data Modelling)
@@ -251,13 +251,13 @@ h(Process Modelling)
 i(Application Generation)
 j(Testing and Turnover)
 f-->g-->h-->i-->j-->|Team2|f
-```
+</div>
 
 ### Rational Unified Process
 
 Process independent lifecycle approach. 
 
-```mermaid
+<div class="mermaid">
 flowchart LR;
 Inception-->Elaboration-->Construction-->Transition
 id1(Establish a Business case for the system)
@@ -268,7 +268,7 @@ inception-->id1
 elaboration-->id2
 construction-->id3
 transition-->id4
-```
+</div>
 
 Perspectives or RUP
 
@@ -294,12 +294,12 @@ Used when the requirements change rapidly
 | Embrace changes       | Expect the changes to the system so that they can be easily accomodated                                   |
 | Maintain simplicity   | Wherever possible, stay simple                                                                            |
 
-```mermaid
+<div class="mermaid">
 flowchart LR;
 User-Stories<-->Specification
 Specification-->Test-->Implementation-->Design-->Specification
 Test-->Design
-```
+</div>
 
 ### Extreme Programming
 
@@ -862,11 +862,10 @@ The organization and design of overall structure of a system is specified in arc
   - $$
     Productivity\ rate = \frac{size}{effort}
     $$
-
-    $$
-    Example : \\
+    Example:\\
     Let\ number\ of\ men = 2\\
     LOC = 4800\\
+    $$
     Productivity\ rate = \frac{4800}{men*12} LOC/man/month
     $$
 
@@ -874,14 +873,10 @@ The organization and design of overall structure of a system is specified in arc
 
 - **FP - Functional point**
 
-  - $$
-    AFP = UFP\times CAF\\
+  - AFP = UFP\times CAF\\
     AFP = Adjusted Functional Points\\
     UFP = Unadjusted Functional Points\\
     CAF = Complexity Adjustment Factor
-    $$
-
-    
 
 ## Project Estimation Techniques
 
@@ -892,19 +887,20 @@ The organization and design of overall structure of a system is specified in arc
 
 - **Heuristic**
 
-  - $$
-    Techique\ 1\\
-    Estimated\ parameter = c_{1}\times e^{d_{1}}\\
-    c1\ and\ d1\ are\ constants\ determined\ from\ previous\ projects\\
-    e\ is\ the\ estimate
-    $$
+  - Techique\ 1\\
 
-  - $$
-    Techique\ 2\\
-    Estimated\ parameter = c_{1}\times e^{d_{1}}\ * c_{2}\times e^{d_{2}}...\\
-    c1\ and\ d1\ are\ constants\ determined\ from\ previous\ projects\\
-    e\ is\ the\ estimate
-    $$
+$$
+Estimated\ parameter = c_{1}\times e^{d_{1}}\\
+c1\ and\ d1\ are\ constants\ determined\ from\ previous\ projects\\
+e\ is\ the\ estimate
+$$
+
+$$
+Techique\ 2\\
+Estimated\ parameter = c_{1}\times e^{d_{1}}\ * c_{2}\times e^{d_{2}}...\\
+c1\ and\ d1\ are\ constants\ determined\ from\ previous\ projects\\
+e\ is\ the\ estimate
+$$
 
     
 
