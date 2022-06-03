@@ -18,15 +18,10 @@ mermaid: true
 ## ISO 9126 quality standards
 
 - Functionality
-
 - Reliability
-
 - Usability
-
 - Efficiency
-
 - Maintainability
-
 - Portability
 
 ## Software Crisis
@@ -36,15 +31,10 @@ The result of incremental failure rate of software development which led to an i
 **Causes**
 
 - Increasing Demand
-
 - Increasing Complexity
-
 - Increasing Challenges
-
 - Same workforce
-
 - Same methods
-
 - Same tools
 
 ## Types of softwares
@@ -52,25 +42,15 @@ The result of incremental failure rate of software development which led to an i
 - System software
 
 - Application software
-
 - Scientific / Engineering software
-
 - Embedded software
-
 - Web application
-
 - AI Software
-
 - Networking software
-
 - Business software
-
 - Entertainment software
-
 - Utility software
-
 - Document management software
-
 - Reservation software
 
 ## Software models
@@ -78,37 +58,25 @@ The result of incremental failure rate of software development which led to an i
 ### Code and Fix Model
 
 - Characteristics
-  
   - Start coding right away and fix the bugs as we go
 
 - Advantages
-  
   - Convenient for small projects
-  
   - Time saver for low budget products
-  
   - Good for entry level developers
-  
   - Full control over development process
 
 - Disadvantages
-  
   - Might run into huge unseen problems
-  
   - Difficult to maintain and change later
-  
   - Might have quality issues
 
 ### Waterfall Model (Winston W. Royce)
 
 - Characteristics
-  
   - Consists of a number of phases. 
-  
   - One phase cant be started before another's completion. 
-  
   - Work is divided among different class of specialists. 
-  
   - Work on one phase is frozen and documentation is passed on.
 
 <div class="mermaid">
@@ -122,27 +90,17 @@ flowchart TD
 </div>
 
 - Advantages
-  
   - Simple and easy to understand
-  
   - All phases are procesed one at a time
-  
   - All phases well documented
-  
   - Reduces development and maintainence cost
-  
   - Enables organization
-  
   - New person can take up an older project easily
 
 - Disadvantages
-  
   - Model does not allow phases to overlap, but they do in real life
-  
   - Not a good model for long/ongoing softwares
-  
   - Difficult to accomodatea any changes midway
-  
   - No working software produced till the end of the lifecycle
 
 ### Iterative Waterfall Model
@@ -165,49 +123,34 @@ f-->d
 ### V Model
 
 - Characteristics
-  
   - The verification and validation model
-  
   - <img src="https://media.geeksforgeeks.org/wp-content/uploads/V-Model.png" title="" alt="Software Engineering | SDLC V-Model - GeeksforGeeks" width="381">
 
 - Advantages
-  
   - Easy to manage due to rigidity of the model
-  
   - Defects are found at early stage
-  
   - Simple to understand and follow
 
 - Disadvantages
-  
   - High risk and uncertainity
-  
   - Not good for complex projects
-  
   - Does not support iteration phases
-  
   - Does not handle concurrent events
 
 ### Evolutionary Model
 
 - Characteristics
-  
   - Software is developed constantly
-  
   - Get customer feedbacks to accomodate them
 
 - **Incremental imlpementation**
-  
   - Few functions are developed to get a working model.
-  
   - Later more functions are added.
 
 - **Prototyping**
   
   - A working prototype is provided to the user in order to get the feedback from the user.
-    
     - Throwaway prototyping
-    
     - Evolutionary prototyping
 
 ### Spiral Model
@@ -217,13 +160,9 @@ f-->d
 ## Metrics for comparing SDLC models
 
 - Shortfall - How far the software is from user requirements
-
 - Lateness - Time delay
-
 - Adaptability - Adaptation of software  to new requirements
-
 - Longevity - Time till the software is replaced
-
 - Inappropriateness - Measure behavior of shortfall over time
 
 ___
@@ -233,9 +172,7 @@ ___
 ### Rapid Application Development
 
 - Based on prototyping and iterative development with no specific planning involved
-
 - RAD produces a software in minimum time
-
 - Use of powerful tools and techniques
 
 <div class="mermaid">
@@ -274,9 +211,7 @@ transition-->id4
 Perspectives or RUP
 
 - **Dynamic perspective** shows phases of model over time
-
 - **Static perspective** shows process activities that are enacted
-
 - **Practice perspective** suggests good practices to be used during the process
 
 ### Agile Development Process
@@ -317,141 +252,90 @@ ___
 #### Types of requirements
 
 - User requirements
-
 - System requirements
-
 - Stakeholders
 
 Based on functionality
 
 - Functional requirements
-
 - Non Functional requirements
-  
   - Product requirements
-  
   - Organizational requirements
-  
   - External requirements
-    
     Metrics for measuring non-functional requirements
-    
     - Speed 
-    
     - Size
-    
     - Ease of use
-    
     - Reliability
-    
     - Robustness
-    
     - Portability
 
 ## Requirements Engineering
 
 1. Feasibility study
-   
    - Technical feasibility
-   
    - Operational feasibility
-   
    - Legal feasibility
-   
    - Schedule feasibility
 
-2. Requierment elicitaion and analysis
-   
+2. Requirement elicitation and analysis
    - Interviewing
-   
    - Observation and Ethnography 
-   
    - Scenarios
-   
    - Use cases
-   
    - Questionnaires
-   
    - Survey
-   
    - Existing manuals and documentation
-   
    - Group discussion
-   
    - Prototyping
 
 3. Requirement specification
-   
    - Documentation of user and system specifications.
-   
    - It can be done as:
-     
      - Natural Language Specification
-     
      - Structured specification
-     
      - Graphical notations
-     
      - Mathematical specifications
-       
        The official document that specifies sofware requirements is called as the **SRS** **document**. It is used by customers, managers, system engineers, system test engineers, system maintainence engineers.
        
        A good SRS document is concise, complete, correct, consistent, unambiguous, structured,verifiable, modifiable.
    
    - Specifications of SRS by IEEE
-     
-     ---
-     
-     1. Introduction
-        
-        1. Purpose
-        
-        2. Project scope
-        
-        3. Definitions, acronyms and abbreviations
-        
-        4. Reference
-        
-        5. Overview
-     
-     2. Overall Descriptive
-        
-        1. Product perspective
-        
-        2. Product features
-        
-        3. User classes
-        
-        4. Operating environment
-        
-        5. Design and implementation constraints
-        
-        6. User documentation
-        
-        7. Assumptions and Dependencies
-     
-     3. Specific requirements
-        
-        1. Functional requirements
-     
-     4. External interface requirements
-        
-        1. User
-        
-        2. Hardware
-        
-        3. Software
-        
-        4. Communication
-     
-     5. Other non-functional requirements
-     
-     6. Other requirements
-     
-     ---
+
+---
+
+1. Introduction
+  1. Purpose
+  2. Project scope
+  3. Definitions, acronyms and abbreviations
+  4. Reference
+  5. Overview
+
+2. Overall Descriptive
+  1. Product perspective
+  2. Product features
+  3. User classes
+  4. Operating environment
+  5. Design and implementation constraints
+  6. User documentation
+  7. Assumptions and Dependencies
+
+3. Specific requirements
+  1. Functional requirements
+
+4. External interface requirements
+  1. User
+  2. Hardware
+  3. Software
+  4. Communication
+
+5. Other non-functional requirements
+
+6. Other requirements
+
+---
 
 4. Requirement verification and validation
-
 5. Requirements management
 
 ## Tools for requirement gathering
@@ -483,58 +367,35 @@ A representation of how data flows and is stores in a system; Useful for data an
 ## Software Design
 
 - Preliminary / high level design
-
 - Detailed design
-
 - Following items are designed during design phase
-  
   - Modules
-  
   - Control relationship among identified modules
-  
   - Interfaces among the modules
-  
   - Data structure of individual module
-  
   - Algorithm to implement each module
 
 - Characteristics of good software design
-  
   - Correct
-  
   - Understandable
-  
   - Efficient
-  
   - Maintainable
-  
   - Complete
-  
   - Consistent
-  
   
 
 ### Software design principles
 
 - Problem partitioning
-
 - Increase abstraction
-
 - Modularity
-
 - Increase cohesion
-
 - Reduce coupling
-
 - Increase reusability
-
 - Design for flexibility
-
 - Portability
-
 - Testability
 
-  ___
 
   **Types of coupling**
 
@@ -555,46 +416,32 @@ A representation of how data flows and is stores in a system; Useful for data an
   - Logical
   - Coincidental
 
-  ___
-
-  
 
 ### Software design methodology
 
 - Level oriented software design
-  
   - Top down - Go into more depth, keep breaking down the system into smaller chunks. Used when design is to be done ground up.
-  
   - Bottom up - Lowest level subsystems are designed first
 
 - Function oriented
-  
   - Design of data flow
-  
   - Structure division
-  
   - Detailed design
 
 - Object oriented software design approach
   
   - ER model
-  
   - Decision tree
-  
   - DFD
-  
   - Structure charts
 
 ### DFDs and Structre charts
 
 - 0-level DFD or context diagram
-  
   - Has single process for main task and its relationship with external entities.
 - 1-Level DFD
-  
   - More than 1 process/bubble. The major process is highlighted and is further divided into subprocesses.
 - 2 level DFD
-  
   - The data flow is also shown along with the processes. 
 
 
@@ -602,11 +449,8 @@ A representation of how data flows and is stores in a system; Useful for data an
 ### Functional independence
 
 A module with high cohesion and low coupling is called as functionally independent of other modules. Functional independence is required because:
-
 - Error isolation
-
 - Scope of reuse
-
 - Understandability
   
   
@@ -614,11 +458,8 @@ A module with high cohesion and low coupling is called as functionally independe
 ### Modularity
 
 - Easy to understand the system
-
 - System maintainence is easy
-
 - Reusability
-  
   
 
 ### Detailed design
@@ -696,17 +537,11 @@ The organization and design of overall structure of a system is specified in arc
 - Code review
 
   - Are requirements covered ?
-
   - Is software design consistent ?
-
   - Is it a standard coding style ?
-
   - Are enough test cases generated ?
-
   - Is documentation complete ?
-
   - Major drawbacks / flaws
-
     **Types of code reviews**
 
     - Code walkthrough 
@@ -789,15 +624,13 @@ The organization and design of overall structure of a system is specified in arc
 - Useful in Legacy software migration
 - Reduces risk and cost of development
 
-## Cost maintainence
+## maintenance
 
 - COCOMO - Boehm
-
 - Based on ACT (Annual change traffic)
-
-- $$
-    ACT = \frac{KLOC_{added}+KLOC_{deleted}}{KLOC_{total}}
-    $$
+$$
+ACT = \frac{KLOC_{added}+KLOC_{deleted}}{KLOC_{total}}
+$$
 
 - **Factors affecting cost**
   - Technical (Changes in modules, programming languages, style etc.)
@@ -841,7 +674,6 @@ The organization and design of overall structure of a system is specified in arc
 - People management
 - Proposal writing
 
-****
 
 ## SPMP Document
 
@@ -856,25 +688,23 @@ The organization and design of overall structure of a system is specified in arc
 
 - **LOC - Lines of code**
 
-  - $$
-    LOC = \frac{S_{opt} + 4S_{m} + S_{pess}}{6}
-    $$
+$$
+LOC = \frac{S_{opt} + 4S_{m} + S_{pess}}{6}
+$$
 
-  - $$
-    Productivity\ rate = \frac{size}{effort}
-    $$
-    Example:\\
-    Let\ number\ of\ men = 2\\
-    LOC = 4800\\
-    $$
-    Productivity\ rate = \frac{4800}{men*12} LOC/man/month
-    $$
+$$
+\text{Productivity rate} = \frac{size}{effort}
+$$
 
-    
+Example:
+- Let number of men = 2
+  LOC = 4800\\
+  $$
+  \text{Productivity rate} = \frac{4800}{men*12} LOC/man/month
+  $$
 
 - **FP - Functional point**
-
-  - AFP = UFP\times CAF\\
+  - AFP = UFP $\times$ CAF\\
     AFP = Adjusted Functional Points\\
     UFP = Unadjusted Functional Points\\
     CAF = Complexity Adjustment Factor
@@ -888,22 +718,15 @@ The organization and design of overall structure of a system is specified in arc
 
 - **Heuristic**
 
-  - Techique\ 1\\
+  - Technique 1
+    - $\text{Estimated parameter} = c_{1}\times e^{d_{1}}\\$
+    - $c_1$ and $d_1$ are constants determined from previous projects
+    - $e$ is the estimate
 
-$$
-Estimated\ parameter = c_{1}\times e^{d_{1}}\\
-c1\ and\ d1\ are\ constants\ determined\ from\ previous\ projects\\
-e\ is\ the\ estimate
-$$
-
-$$
-Techique\ 2\\
-Estimated\ parameter = c_{1}\times e^{d_{1}}\ * c_{2}\times e^{d_{2}}...\\
-c1\ and\ d1\ are\ constants\ determined\ from\ previous\ projects\\
-e\ is\ the\ estimate
-$$
-
-    
+  - Technique 2
+    - $\text{Estimated parameter} = c_{1}\times e^{d_{1}}\ * c_{2}\times e^{d_{2}}...$
+    - $c_1$ and $d_1$ are constants determined from previous projects
+    - $e$ is the estimate
 
 - **Analytical**
 
@@ -930,13 +753,12 @@ Constructive Cost Model - Falls under Heuristic approach
   - Semi Detached - Mixture of experienced and unexperienced people (50 kloc - 300 kloc)
   - Embedded - Strongly connected and complex hardware (> 300 kloc)
 
-  $$
-  Effort = a_{1}\times (kloc)^{a_{2}}\ person\ month\\
-  T_{dev} = b_{1}\times{effort^{b_{2}}}\ months
-  \\a\ and\ b\ are\ constants
-  $$
+$$
+\text{Effort} = a_{1}\times (kloc)^{a_{2}} \text{person month}\\
+T_{dev} = b_{1}\times\text{Effort}^{b_{2}} \text{months}
+$$
 
-  
+a$ and $b$ are constants
 
 ### COCOMO - Intermediate
 
