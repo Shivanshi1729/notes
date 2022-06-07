@@ -101,7 +101,7 @@ session_destroy();
 ?>
 ```
 
-## What is a Cookie?
+## What is a Cookie? 🍪
 
 - A cookie is often used to identify a user.
 - A cookie is a small file that the server embeds on the user's computer.
