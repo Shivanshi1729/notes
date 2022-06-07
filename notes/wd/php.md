@@ -18,26 +18,28 @@ parent: Web Development
 PHP: Hypertext Preprocessor
 
 - php code is processed on the web server by php interpreter
-- the result of the interpreted and executed php code
-  (which may be any type of data such as generated HTML, binary image data)
-  would form the whole part of an HTTP response.
+- the result of the interpreted and executed php code (which may be any type of
+  data such as generated HTML, binary image data) would form the whole part of
+  an HTTP response.
 
 ## Installation
 
-To install PHP, we will suggest you to install AMP (Apache, MySQL, PHP) software stack. 
-It is available for all operating systems. There are many 
-AMP options available in the market that are given below:
+To install PHP, we will suggest you to install AMP (Apache, MySQL, PHP) software
+stack. It is available for all operating systems. There are many AMP options
+available in the market that are given below:
 
 - WAMP for Windows
 - LAMP for Linux
 - MAMP for Mac
 - SAMP for Solaris
 - FAMP for FreeBSD
-- XAMPP (Cross, Apache, MySQL, PHP, Perl) for Cross Platform: 
-- It includes some other components too such as FileZilla, OpenSSL, Webalizer, Mercury Mail etc.
+- XAMPP (Cross, Apache, MySQL, PHP, Perl) for Cross Platform:
+- It includes some other components too such as FileZilla, OpenSSL, Webalizer,
+  Mercury Mail etc.
 
-If you are on Windows and don't want Perl and other features of XAMPP, 
-you should go for WAMP. In a similar way, you may use LAMP for Linux and MAMP for Macintosh.
+If you are on Windows and don't want Perl and other features of XAMPP, you
+should go for WAMP. In a similar way, you may use LAMP for Linux and MAMP for
+Macintosh.
 
 ### LAMP
 
@@ -57,7 +59,8 @@ sudo systemctl restart apache2.service
 ## Configuration
 
 - Adding new virtual host, also don forget to add `port:80` in `ports.conf`
-- ubuntu already contains the config file divided into different parts so it's easy to make changes
+- ubuntu already contains the config file divided into different parts so it's
+  easy to make changes
 
 ```
 <VirtualHost *:5000>
@@ -83,10 +86,9 @@ sudo systemctl restart apache2.service
 ## Basics
 
 - semicolon are necessary in `php`
-- `<?php ...code.... ?>` 
+- `<?php ...code.... ?>`
 - `print("Hello");` - prints hello
 - `echo "hello\n";` - prints hello
-
 
 ## Variables
 
@@ -180,11 +182,11 @@ echo 'Multiple', 'Parameters', 'Valid';  // Returns 'MultipleParametersValid'
 
 ## Constants
 
-- A constant is defined by using define()
- and can never be changed during runtime!
+- A constant is defined by using define() and can never be changed during
+  runtime!
 
-- a valid constant name starts with a letter or underscore,
- followed by any number of letters, numbers, or underscores.
+- a valid constant name starts with a letter or underscore, followed by any
+  number of letters, numbers, or underscores.
 
 ```php
 define("FOO", "something");
@@ -272,7 +274,7 @@ var_dump($z); // prints int(0)
 - Prints variable to stdout in human-readable format
 
 ```php
-print_r($array); 
+print_r($array);
 // prints: Array ( [0] => One [1] => Two [2] => Three )
 ```
 
@@ -416,7 +418,7 @@ do {
 } while ($i < 5); // Prints "01234"
 ```
 
-- for 
+- for
 
 ```php
 for ($x = 0; $x < 10; $x++) {
@@ -563,3 +565,14 @@ variable("Separate", "Hello", "World"); // Separate || Hello | World |
 
 include 'my-file.php';
 ```
+
+## Sorting
+
+- `sort()` sort array in ascending order, values, will not preserve keys
+- `rsort()` sort array in descending order, values, will not preserve keys
+
+- `asort()` - sort array in ascending order, values
+- `arsort()` - sort array in descending order, values
+
+- `ksort()` - sort array in ascending order, keys
+- `krsort()` - sort array in descending order, keys
