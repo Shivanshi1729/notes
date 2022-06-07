@@ -398,3 +398,18 @@ mathjax: true
   - does not gaurantee the high quality of the process
   - heavy emphasis on documentation and take lot of time and effort
 - SEI CMM - software engineering institute capibility maturity model
+
+# analytical estimation
+
+- $\eta_1$ no of unique operation
+- $\eta_2$ no of unique operands
+- $N_1$ no of operators
+- $N_2$ no of operands
+- $N = N_1 + N_2$ - length of code
+- $\eta = \eta_1 + \eta_2$ vocabulary of code
+- $V = N \log_{2}{\eta}$ - volume of the code
+- $V^*  = (2+\eta_2) \log_2{(2+\eta_2)}$ - potential minimal volume
+- $L = V^*/V$ - program level - level of abstraction
+- $E = V/L = V^2/V^*$ - effort
+- $T = E/S$ - time, S - speed of mental discrimination
+- $N = \eta_1 \log_2{\eta_1} + \eta_2 + \log_2{\eta_2}$ - length estimation

@@ -4,6 +4,7 @@ baseurl: "/notes"
 url: "https://shivanshi1729.github.io"
 
 remote_theme: just-the-docs/just-the-docs
+theme: just-the-docs
 
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile"
@@ -90,7 +91,6 @@ plugins:
   - jekyll-seo-tag
 
 kramdown:
-  math_engine: katex
   syntax_highlighter_opts:
     block:
       line_numbers: false
