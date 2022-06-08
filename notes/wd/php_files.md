@@ -20,8 +20,8 @@ parent: Web Development
 - insert content of one php file into another
 - `require` and `include` are same except they have diff. behavior if file is
   missing
-  - `require` will produce a fatal error (`E_COMPILE_ERROR`) and stop the script
-  - `include` will only produce a warning (`E_WARNING`) and the script will
+  - `require` will produce a fatal error (`E_COMPILE_ERROR`) and stop the script
+  - `include` will only produce a warning (`E_WARNING`) and the script will
     continue
 
 So, if you want the execution to go on and show users the output, even if the
@@ -41,7 +41,7 @@ to be updated, you can only update the header include file.
     <h1>Welcome to my home page!</h1>
     <p>Some text.</p>
     <p>Some more text.</p>
-    <?php include 'footer.php';?>
+    <?php include 'footer.php';?>
   </body>
 </html>
 ```
@@ -55,13 +55,13 @@ to be updated, you can only update the header include file.
 ### Open File - `fopen()`
 
 ```php
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
 <?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
-echo fread($myfile,filesize("webdictionary.txt"));
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+echo fread($myfile,filesize("webdictionary.txt"));
 fclose($myfile);
 ?>
 
@@ -91,7 +91,7 @@ fread($myfile,filesize("webdictionary.txt"));
 
 ```php
 <?php
-$myfile = fopen("webdictionary.txt", "r");
+$myfile = fopen("webdictionary.txt", "r");
 // some code to be executed....
 fclose($myfile);
 ?>
@@ -102,12 +102,12 @@ fclose($myfile);
 - after reading one line the file pointer moves to the next line
 
 ```php
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 <?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
-echo fgets($myfile);
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+echo fgets($myfile);
 fclose($myfile);
 ?>
 </body>
@@ -120,10 +120,10 @@ fclose($myfile);
 
 ```php
 <?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
 // Output one line until end-of-file
 while(!feof($myfile)) {
-  echo fgets($myfile) . "<br>";
+  echo fgets($myfile) . "<br>";
 }
 fclose($myfile);
 ?>
@@ -134,15 +134,15 @@ fclose($myfile);
 ## Read single character `fgetc()`
 
 ```php
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
 <?php
-$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
+$myfile = fopen("webdictionary.txt", "r") or die("Unable to open file!");
 // Output one character until end-of-file
 while(!feof($myfile)) {
-  echo fgetc($myfile);
+  echo fgetc($myfile);
 }
 fclose($myfile);
 ?>
@@ -155,10 +155,10 @@ fclose($myfile);
 
 ```php
 <?php
-$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
-$txt = "John Doe\n";
+$myfile = fopen("newfile.txt", "w") or die("Unable to open file!");
+$txt = "John Doe\n";
 fwrite($myfile, $txt);
-$txt = "Jane Doe\n";
+$txt = "Jane Doe\n";
 fwrite($myfile, $txt);
 fclose($myfile);
 ?>
@@ -173,14 +173,14 @@ fclose($myfile);
 ### Create a HTML form
 
 ```php
-<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <body>
 
-<form action="upload.php" method="post" enctype="multipart/form-data">
-    Select image to upload:
-    <input type="file" name="fileToUpload" id="fileToUpload">
-    <input type="submit" value="Upload Image" name="submit">
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
 </form>
 
 </body>
@@ -191,20 +191,20 @@ fclose($myfile);
 
 ```php
 <?php
-$target_dir = "uploads/";
+$target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
-$uploadOk = 1;
-$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
+$uploadOk = 1;
+$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
 // Check if image file is a actual image or fake image
 if(isset($_POST["submit"])) {
-    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
-    if($check !== false) {
-        echo "File is an image - " . $check["mime"] . ".";
-        $uploadOk = 1;
-    } else {
-        echo "File is not an image.";
-        $uploadOk = 0;
-    }
+    $check = getimagesize($_FILES["fileToUpload"]["tmp_name"]);
+    if($check !== false) {
+        echo "File is an image - " . $check["mime"] . ".";
+        $uploadOk = 1;
+    } else {
+        echo "File is not an image.";
+        $uploadOk = 0;
+    }
 }
 ?>
 ```
@@ -213,8 +213,8 @@ if(isset($_POST["submit"])) {
 
 ```php
 if (file_exists($target_file)) {
-    echo "Sorry, file already exists.";
-    $uploadOk = 0;
+    echo "Sorry, file already exists.";
+    $uploadOk = 0;
 }
 ```
 
@@ -222,8 +222,8 @@ if (file_exists($target_file)) {
 
 ```php
 if ($_FILES["fileToUpload"]["size"] > 500000) {
-    echo "Sorry, your file is too large.";
-    $uploadOk = 0;
+    echo "Sorry, your file is too large.";
+    $uploadOk = 0;
 }
 ```
 
@@ -233,7 +233,7 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 // Allow certain file formats
 if($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg"
 && $imageFileType != "gif" ) {
-    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-    $uploadOk = 0;
+    echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
+    $uploadOk = 0;
 }
 ```

@@ -28,12 +28,12 @@ To install PHP, we will suggest you to install AMP (Apache, MySQL, PHP) software
 stack. It is available for all operating systems. There are many AMP options
 available in the market that are given below:
 
-- WAMP for Windows
-- LAMP for Linux
-- MAMP for Mac
-- SAMP for Solaris
-- FAMP for FreeBSD
-- XAMPP (Cross, Apache, MySQL, PHP, Perl) for Cross Platform:
+- WAMP for Windows
+- LAMP for Linux
+- MAMP for Mac
+- SAMP for Solaris
+- FAMP for FreeBSD
+- XAMPP (Cross, Apache, MySQL, PHP, Perl) for Cross Platform:
 - It includes some other components too such as FileZilla, OpenSSL, Webalizer,
   Mercury Mail etc.
 

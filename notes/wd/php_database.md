@@ -154,7 +154,7 @@ catch(PDOException $e) {
 - `mysqli_num_rows()` function is an inbuilt function in PHP which is used to
   return the number of rows present in the result set
 - `mysqli_free_result()` function frees the memory associated with the result.
-- `mysqli_fetch_array()` function is used to fetch rows from the database and
+- `mysqli_fetch_array()` function is used to fetch rows from the database and
   store them as an array
 
 ## `SELECT` query using SQLi oop
