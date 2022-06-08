@@ -51,15 +51,17 @@ webpage. There are two ways of adding jQuery library to our webpage.
 
 ### Include jQuery from CDN Link
 
-CDN stands for Content Delivery Network which is basically a set of servers used
-for storing and delivering data. Basically, these jQuery library files are
-already uploaded to various CDNs and we can use them directly on our web page.
-Then, we don't need to download any files on our local machine.
-`<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>`
-We can see the CDN link inside the `src` attribute. We have successfully added
-jQuery to our web page. We can use all the features of jQuery on our page. While
-loading the page, the browser will automatically download the jQuery library
-files from the CDN link.
+- CDN stands for Content Delivery Network which is basically a set of servers
+  used for storing and delivering data.
+- Basically, these jQuery library files are already uploaded to various CDNs and
+  we can use them directly on our web page.
+- Then, we don't need to download any files on our local machine.
+  `<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>`
+  We can see the CDN link inside the `src` attribute.
+- We have successfully added jQuery to our web page.
+- We can use all the features of jQuery on our page.
+- While loading the page, the browser will automatically download the jQuery
+  library files from the CDN link.
 
 ```html
 <!DOCTYPE html>
