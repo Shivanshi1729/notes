@@ -16,25 +16,25 @@ parent: Web Development
 </details>
 
 - A free and open-source javascript library which is basically used for
-  designing, traversing and manipulating the HTML DOM. A DOM is a tree-like
-  structure used to represent the elements of a webpage. jQuery helps the
-  designer to use javascript code easily for their websites. The advanced
-  approach to jQuery enables to create powerful dynamic webpages and web
-  applications. The syntax of jQuery is designed to make things easy, such as:
-
-- Navigation of a document
-- Selection of DOM elements
-- Creating animations
-- Handling events
-- Developing Ajax applications.
+  designing, traversing and manipulating the HTML DOM.
+- A DOM is a tree-like structure used to represent the elements of a webpage.
+- jQuery helps the designer to use javascript code easily for their websites.
+- The advanced approach to jQuery enables to create powerful dynamic webpages
+  and web applications.
+- The syntax of jQuery is designed to make things easy, such as:
+  - Navigation of a document
+  - Selection of DOM elements
+  - Creating animations
+  - Handling events
+  - Developing Ajax applications.
 
 jQuery is one of the widely used javascript library among all other libraries
 holding the following core features:
 
-    1. DOM elements selection
-    2. Traversal and manipulation which is enabled by Sizzle(the selector engine)
-    3. Creating a new programming style
-    4. Fusing DOM data structures and algorithms
+1. DOM elements selection
+2. Traversal and manipulation which is enabled by Sizzle(the selector engine)
+3. Creating a new programming style
+4. Fusing DOM data structures and algorithms
 
 On the other hand, jQuery allows developers to create plug-ins on top of the
 JavaScript library. Developers can even create abstractions for low-level
