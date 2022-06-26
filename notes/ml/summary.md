@@ -32,36 +32,24 @@ classDiagram
 - **Inter quartile range** - Range of 4 quartiles separately
 - **Five number summary of data** - [ *Min, Q<sub>1</sub>, Q<sub>2</sub>,
   Q<sub>3</sub>, Max* ]
-
 - **Standard deviation** - Average of absolute deviation of all data-points from
-  mean
-
   $$
   σ = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(x_i-x̄)^2}
   $$
-
 - **Variance** - Yet another measure of deviation, square of standard deviation
   σ<sup>2</sup>
-
 - **Mean** - Average
-
 - **Median** - Middle value(s) in sorted data
-
 - **Mode** - Most frequent observation
-
----
 
 ### Statistics
 
 - **Population** - All data-points under study in an statistical operation
 - **Sample** - Small part of population to collect information
 
----
-
 ### Knowing the data
 
 - **Attributes** - Properties that define a data point
-
   - **Nominal attributes** - Regarding names
   - **Binary attributes** - Meh
   - **Ordinal attributes** - Representing rank or order of data-points among
@@ -71,18 +59,12 @@ classDiagram
     may be ranked
   - **Ratio scaled attributes** - When values are represented as comparison to
     other values
-
 - **Reading box-plot**
-
   ![img](https://www.statisticshowto.com/wp-content/uploads/2009/08/boxplot4.png)
-
 - **Properties of dataset**
-
   - Dimensionality - Number of attributes a dataset possesses
   - Sparsity - The degree of presence of null values in a dataset
   - Resolution -
-
----
 
 ### Measuring Performance
 
@@ -99,13 +81,13 @@ classDiagram
 </thead>
 <tbody>
   <tr>
-    <td rowspan="2"><span>Actual Class</span></td>
+    <td rowspan="2">Actual Class</td>
     <td><span>True</span></td>
     <td>TP</td>
     <td>FN / Type 2</td>
   </tr>
   <tr>
-    <td><span">False</span></td>
+    <td>False</td>
     <td>FP / Type 1</td>
     <td>TN</td>
   </tr>
@@ -196,7 +178,7 @@ $$
 
 ### Matthews' correlation coefficient
 
-<sub>Brian W. Matthews - 1975</sub>
+- Brian W. Matthews - 1975
 
 It is used to measure the quality of binary class classification. It considers
 the Confusion Matrix and provides a measure even if the classes are not balanced
@@ -205,8 +187,6 @@ in size.
 $$
 MCC = \frac{TP\times{TN}-FP\times{FN}}{\sqrt{(TP+FP)(TP+FN)(TN+FP)(TN+FN)}}
 $$
-
----
 
 - **Lazy Learners:** Store the training data and wait until the testing data
   appear. Take less time in training but more in prediction.
@@ -279,8 +259,6 @@ $$
     values (How much the y value changed on change in X value)
   - Accuracy - Percentage of deviation of predicted target from actual values
 
----
-
 ### Dissimilarity in data
 
 - **Numeric data**
@@ -340,8 +318,6 @@ $$
     J = \frac{f_{11}}{f_{01}+f_{10}+f_{11}}
     $$
 
----
-
 ### Naive Bayes classifier <sub><sub>Thomas Bayes - 1973</sub> </sub>
 
 For n disjoint sets E<sub>1</sub>,E<sub>2</sub>,E<sub>3</sub>....E<sub>n</sub>
@@ -391,13 +367,9 @@ Procedure:
 - Find an equation such that for one class $w_0 + w_1x_1 + w_2x_2 + ... > 0$ and
   for another $w_0 + w_1x_1 + w_2x_2 + ... < 0$
 
----
-
 ### Principal Component Analysis
 
-IDK
-
----
+...
 
 ### K Nearest Neighbors
 
@@ -452,19 +424,33 @@ methods are:
 <tbody>
   <tr>
     <td>Partition method</td>
-    <td>- Find mutually exclusive clusters of spherical shape<br>- Distance based<br>- Make use of mean/median or similar measures<br>- Effective use of small to medium sized data</td>
+    <td>
+    - Find mutually exclusive clusters of spherical shape<br>
+    - Distance based<br>
+    - Make use of mean/median or similar measures<br>
+    - Effective use of small to medium sized data</td>
   </tr>
   <tr>
     <td>Hierarchical method</td>
-    <td>- Multiple level decomposition<br>- Incorporate other techniques like microclustering</td>
+    <td>
+    - Multiple level decomposition<br>
+    - Incorporate other techniques like microclustering
+    </td>
   </tr>
   <tr>
     <td>Density based method</td>
-    <td>- Can find arbitrary shaped clusters<br>- Low density regions seperate clusters<br>- Each point must have a minimum number of points within the neighborhood<br>- May filter outliers</td>
+    <td>
+    - Can find arbitrary shaped clusters<br>
+    - Low density regions seperate clusters<br>
+    - Each point must have a minimum number of points within the neighborhood<br>
+    - May filter outliers</td>
   </tr>
   <tr>
-    <td">Grid based method</td>
-    <td">- Use  a multiresolution grid data structure<br>- Fast to process</td>
+    <td>Grid based method</td>
+    <td>
+      - Use a multiresolution grid data structure<br>
+      - Fast to process
+    </td>
   </tr>
 </tbody>
 </table>
@@ -477,8 +463,6 @@ methods are:
 - Dealing with noisy data
 - Insensitivity to input order
 - Interpret-ability and usability
-
----
 
 ### Decision trees
 
@@ -507,8 +491,6 @@ Types of decision trees:
 make it less dense and less complex. It can be attained via both top-down or
 bottom-up approach.
 
----
-
 **Hold out method and random sub-sampling**
 
 Given data is partitioned into 2 independent datasets. One set is used to train
@@ -528,8 +510,6 @@ test.
 In **stratified cross validation**, the folds are made such that the class
 distribution is balanced among the folds.
 
----
-
 ### Ensemble methods
 
 When a model is made out of composition of different models. Bagging and
@@ -541,8 +521,6 @@ classifiers to produce the final result. Ex. Random forest
 **Boosting** : Every base classifier is assigned a weight and its vote is
 accounted for according to the weight. Ex. AdaBoost
 
----
-
 ### Apriori algorithm
 
 Finding frequent item sets by combined candidate generation.Name of the
@@ -553,8 +531,6 @@ itemsets are used to find k+1 itemsets.
 **Apriori Property :** All subsets of a frequent itemset must be
 frequent(Apriori propertry). If an itemset is infrequent, all its supersets will
 be infrequent.
-
----
 
 ### Neural Networks
 
