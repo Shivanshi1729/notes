@@ -4,7 +4,6 @@ title: Unit 1
 parent: Compiler Design
 ---
 
-
 # compiler design
 
 - [tutorial point]
@@ -15,6 +14,7 @@ parent: Compiler Design
 ## introduction
 
 - compilers for c
+
   - gcc
   - llvm
 
@@ -28,7 +28,8 @@ parent: Compiler Design
 [tutorial point]: https://www.tutorialspoint.com/compiler_design/index.htm
 [gfg]: https://www.geeksforgeeks.org/introduction-of-compiler-design/
 [jp]: https://www.javatpoint.com/compiler-tutorial
-[nptl videos]: https://www.youtube.com/watch?v=7Nb-NTGbe-Q&list=PLbRMhDVUMngcseCW7wXDvtTDemCuH80fP&index=3
+[nptl videos]:
+  https://www.youtube.com/watch?v=7Nb-NTGbe-Q&list=PLbRMhDVUMngcseCW7wXDvtTDemCuH80fP&index=3
 
 ## videos
 
@@ -42,39 +43,41 @@ parent: Compiler Design
 - Lex: https://www.youtube.com/watch?v=AnATyNsKfaA
 - Lexical Analysis Generator: https://www.youtube.com/watch?v=JZ9ffLYRWy4
 - Parsing: https://www.youtube.com/watch?v=hCdO5DneKGU
-- Types of Parsing: 
-- Recursive Descent Parsing: 
-- Example: 
-- Predictive Parsing: 
-- Calculation of first: 
+- Types of Parsing:
+- Recursive Descent Parsing:
+- Example:
+- Predictive Parsing:
+- Calculation of first:
 
 ## compile vs interpreters
 
 ### compiler
 
 - scans the entire program and translates the entire program into target code
-- take time to analyze the source code - overall execution is faster than interpreters
-- generate the intermediate object code which require further linking - hence more memory
-- debugging is hard 
-- e.g. - c cpp c# 
+- take time to analyze the source code - overall execution is faster than
+  interpreters
+- generate the intermediate object code which require further linking - hence
+  more memory
+- debugging is hard
+- e.g. - c cpp c#
 
 ### interpreters
 
 - line by line execution
-- less time to analyze the source code - overall execution time is more than compilers
+- less time to analyze the source code - overall execution time is more than
+  compilers
 - no intermediate code is generates - so less memory needed
-- better error diagnostics 
-- e.g. - javascript, python, 
+- better error diagnostics
+- e.g. - javascript, python,
 
 ## compiler generate three types of code
 
-- pure machine code - 
+- pure machine code -
   - for embedded applications
   - doesn't assume existence of any machine code
-- 
+-
 
 ## phases of compiler
-
 
 ## Lexical analysis
 
@@ -95,4 +98,3 @@ parent: Compiler Design
 ## Calculation of First
 
 ## Calculation of Follow
-

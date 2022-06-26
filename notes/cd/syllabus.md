@@ -6,19 +6,19 @@ parent: Compiler Design
 
 # Compiler Design
 
-1. TOC
-{:toc}
+1. TOC {:toc}
 
 ## Course Outcomes
 
 1. Appraise the principles of compiler design like lexical, syntactical,
    semantic analysis, code generation and optimization.
 2. Compare and contrast various parsing techniques such as SLR, CLR, LALR, etc.
-3. Use annotated tree to design the semantic rules for different aspects 
-   of programming language.
-4. Implement lexical analyzer and parser by using modern tools like Flex and Bison.
-5. Examine patterns, tokens & regular expressions for solving a problem in 
-   the field of data mining.
+3. Use annotated tree to design the semantic rules for different aspects of
+   programming language.
+4. Implement lexical analyzer and parser by using modern tools like Flex and
+   Bison.
+5. Examine patterns, tokens & regular expressions for solving a problem in the
+   field of data mining.
 6. Design a compiler for a concise programming language.
 
 ## Unit I
@@ -33,7 +33,7 @@ parent: Compiler Design
   - Bootstrapping:
   - Regular Grammar and Regular Expressions.
 - Lexical analysis:
-  - Role of a Lexical Analyzer; 
+  - Role of a Lexical Analyzer;
   - Input Buffering;
   - Specifications of Tokens;
   - Recognition of Tokens;
@@ -69,59 +69,55 @@ parent: Compiler Design
 
 ## Unit IV
 
-- Intermediate Code Generation (ICG): 
-  - Intermediate Code; 
-  - ICG using Postfix Notation, 
-  - Syntax Tree, 
-  - Directed Acyclic Graph (DAG); 
-  - Three Address Code; 
-  - Quadruples & Triples; 
-  - Back Patching; 
-  - Intermediate Languages; 
-  - Declarations; 
-  - Assignment Statements; 
-  - Boolean Expressions; 
-  - Case Statements;; 
-  - Procedure Calls; 
+- Intermediate Code Generation (ICG):
+  - Intermediate Code;
+  - ICG using Postfix Notation,
+  - Syntax Tree,
+  - Directed Acyclic Graph (DAG);
+  - Three Address Code;
+  - Quadruples & Triples;
+  - Back Patching;
+  - Intermediate Languages;
+  - Declarations;
+  - Assignment Statements;
+  - Boolean Expressions;
+  - Case Statements;;
+  - Procedure Calls;
   - Array References:
-- Code Optimization: 
-  - Introduction to Code Optimization; 
-  - Principal Sources of Optimization; 
+- Code Optimization:
+  - Introduction to Code Optimization;
+  - Principal Sources of Optimization;
   - Machine Dependent & Independent Code Optimization;
-  - Peephole optimization; 
+  - Peephole optimization;
   - Global and Local Optimization of Basic Blocks.
 
 ## Unit V
 
-- Code Generation: 
-  - Code Generation Issues; 
-  - The Target Machine; 
-  - Basic Blocks And Flow Graphs; 
-  - Next-Use Information; 
-  - A Simple Code Generator; 
-  - Register Allocation & Assignment; 
-  - DAG Representation of Basic Blocks; 
+- Code Generation:
+  - Code Generation Issues;
+  - The Target Machine;
+  - Basic Blocks And Flow Graphs;
+  - Next-Use Information;
+  - A Simple Code Generator;
+  - Register Allocation & Assignment;
+  - DAG Representation of Basic Blocks;
   - Generating CodeFrom DAG.
-- Compiler Development: 
-  - Planning a Compiler; 
-  - Compiler Development Approaches; 
-  - Compiler development environment; 
+- Compiler Development:
+  - Planning a Compiler;
+  - Compiler Development Approaches;
+  - Compiler development environment;
   - Testing & Maintenance.
 
 ## Text Books
 
-- Alfred Vaho, Ravi Sethi, Jeffrey Dullman
-  **"Compilers-Principles,Techniques and Tools"**,
-  Education, 2007.
+- Alfred Vaho, Ravi Sethi, Jeffrey Dullman **"Compilers-Principles,Techniques
+  and Tools"**, Education, 2007.
 
 ## Reference Books
 
-- Charles N. Fischer, Richard J. leBlanc, Jr.
-  **"Crafting a Compiler with C"**,
+- Charles N. Fischer, Richard J. leBlanc, Jr. **"Crafting a Compiler with C"**,
   Pearson Education, 1991.
-- Andrew W Apple
-  **"Modern Compiler Implementation in C"**,
-  Cambridge University Press, 1997.
-- Kenneth C Louden
-  **"Compiler Construction Principles & Practice"**,
-  Thomson Education, 1997.
+- Andrew W Apple **"Modern Compiler Implementation in C"**, Cambridge University
+  Press, 1997.
+- Kenneth C Louden **"Compiler Construction Principles & Practice"**, Thomson
+  Education, 1997.
